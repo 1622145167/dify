@@ -132,13 +132,13 @@ services:
       PGVECTOR_PASSWORD: difyai123456
       PGVECTOR_DATABASE: dify
       # Mail configuration, support: resend, smtp
-      MAIL_TYPE: ''
+      MAIL_TYPE: 'smtp'
       # default send from email address, if not specified
-      MAIL_DEFAULT_SEND_FROM: 'YOUR EMAIL FROM (eg: no-reply <no-reply@dify.ai>)'
-      SMTP_SERVER: ''
-      SMTP_PORT: 587
-      SMTP_USERNAME: ''
-      SMTP_PASSWORD: ''
+      MAIL_DEFAULT_SEND_FROM: 'xiedale@126.com'
+      SMTP_SERVER: 'smtp.126.com'
+      SMTP_PORT: 25
+      SMTP_USERNAME: 'xiedale@126.com'
+      SMTP_PASSWORD: 'IFUEVYJNYRZKKJXO'
       SMTP_USE_TLS: 'true'
       # the api-key for resend (https://resend.com)
       RESEND_API_KEY: ''
@@ -464,7 +464,7 @@ services:
       - api
       - web
     ports:
-      - "80:80"
+      - "5080:80"
       #- "443:443"
 networks:
   # create a network between sandbox, api and ssrf_proxy, and can not access outside.
