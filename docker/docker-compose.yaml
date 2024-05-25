@@ -134,11 +134,11 @@ services:
       # Mail configuration, support: resend, smtp
       MAIL_TYPE: 'smtp'
       # default send from email address, if not specified
-      MAIL_DEFAULT_SEND_FROM: 'xiedale@126.com'
-      SMTP_SERVER: 'smtp.126.com'
+      MAIL_DEFAULT_SEND_FROM: ''
+      SMTP_SERVER: ''
       SMTP_PORT: 25
-      SMTP_USERNAME: 'xiedale@126.com'
-      SMTP_PASSWORD: 'IFUEVYJNYRZKKJXO'
+      SMTP_USERNAME: ''
+      SMTP_PASSWORD: ''
       SMTP_USE_TLS: 'true'
       # the api-key for resend (https://resend.com)
       RESEND_API_KEY: ''
